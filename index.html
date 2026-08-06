@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buy, Scan and Win! | JTI</title>
+    <title>Buy, Scan and Win! | Raffle Website</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -37,22 +37,27 @@
     <main>
       <section class="hero">
         <div class="wrapper hero__wrapper">
-          <img
-            src="/images/img_hero.png"
-            alt=""
-            class="hero__image"
-            width="811"
-            height="526"
-          />
-
           <div class="hero__heading">
-            <h2>Buy, Scan, And</h2>
-            <h1>Win</h1>
+            <img
+              src="/images/img_hero.png"
+              alt=""
+              class="hero__image"
+              width="811"
+              height="526"
+            />
+            <div class="hero__title">
+              <h2 class="heading stroke__gradient">Buy, Scan, And</h2>
+              <h1 class="heading style__italic color__yellow stroke__gradient">
+                Win
+              </h1>
+            </div>
           </div>
 
           <div class="hero__subheading">
-            <h2>Get a chance to win</h2>
-            <h1>Amazing prices</h1>
+            <h2 class="heading stroke__gradient">Get a chance to win</h2>
+            <h1 class="heading style__italic color__yellow stroke__gradient">
+              Amazing prices
+            </h1>
           </div>
 
           <div class="hero__brands">
@@ -60,16 +65,26 @@
               class="hero__brand-image"
               src="/images/img_winston.png"
               alt=""
+              width="88"
+              height="50"
             />
-            <img class="hero__brand-image" src="/images/img_camel.png" alt="" />
+            <img
+              class="hero__brand-image"
+              src="/images/img_camel.png"
+              alt=""
+              width="99"
+              height="56"
+            />
             <img
               class="hero__brand-image"
               src="/images/img_mighty.png"
               alt=""
+              width="95"
+              height="15"
             />
           </div>
 
-          <p>
+          <p class="small">
             Open only to participants who are 18 years old and above. Terms and
             conditions apply.
           </p>
@@ -77,6 +92,91 @@
           <div class="hero__buttons">
             <a href="" class="button cta-secondary">View Raffle Coupons</a>
             <a href="" class="button cta-primary">Submit Raffle Entry</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mechanics">
+        <div class="wrapper mechanics__wrapper">
+          <div class="mechanics__heading">
+            <h1 class="heading">How to Join the</h1>
+            <h1 class="heading color__yellow">Raffle Promo</h1>
+          </div>
+
+          <h3 class="mechanics__subheading">It's easy as 1-2-3-4-5!</h3>
+
+          <div class="mechanics__cards-wrapper">
+            <div class="mechanics__card">
+              <p class="card__number">1</p>
+              <h3 class="card__title">Buy</h3>
+              <p class="card__description small">
+                Buy 3 sticks of Camel or Mighty at your local sari-sari store
+              </p>
+              <img
+                src="/images/img_mechanics_cigarettes.png"
+                alt=""
+                class="card__image card__buy"
+                width="249"
+                height="203"
+              />
+              <p class="card__footnote small">*Winston Red for Bicol</p>
+            </div>
+            <div class="mechanics__card">
+              <p class="card__number">2</p>
+              <h3 class="card__title">Scratch</h3>
+              <p class="card__description small">
+                Receive a Scratch Card for your raffle entry.
+              </p>
+              <img
+                src="/images/img_mechanics_scratchcard.png"
+                alt=""
+                class="card__image card__scratch"
+                width="212"
+                height="239"
+              />
+            </div>
+            <div class="mechanics__card">
+              <p class="card__number">3</p>
+              <h3 class="card__title">Scan</h3>
+              <p class="card__description small">
+                Scan the QR Code on your scratch card to join the program
+              </p>
+              <img
+                src="/images/img_mechanics_qrcode.png"
+                alt=""
+                class="card__image card__scan"
+                width="119"
+                height="241"
+              />
+            </div>
+            <div class="mechanics__card">
+              <p class="card__number">4</p>
+              <h3 class="card__title">Join</h3>
+              <p class="card__description small">
+                Register an account and input your raffle code entry.
+              </p>
+              <img
+                src="/images/img_mechanics_register.png"
+                alt=""
+                class="card__image card__join"
+                width="249"
+                height="203"
+              />
+            </div>
+            <div class="mechanics__card">
+              <p class="card__number">5</p>
+              <h3 class="card__title">Win</h3>
+              <p class="card__description small">
+                Get a chance to win gadgets, cash, or a motorcycle!
+              </p>
+              <img
+                src="/images/img_mechanics_prize.png"
+                alt=""
+                class="card__image card__win"
+                width="249"
+                height="203"
+              />
+            </div>
           </div>
         </div>
       </section>

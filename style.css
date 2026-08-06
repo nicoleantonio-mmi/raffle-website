@@ -130,6 +130,9 @@
     --color-text-nav-green: var(--c-green-700);
     --color-text-helper-gray: var(--c-gray-500);
     --color-text-placeholder-gray: var(--c-gray-200);
+    --color-text-heading-yellow: var(--c-yellow-600);
+    --color-text-heading-yellow-2: var(--c-brown);
+    --color-text-error-red: var(--c-red-500);
 
     /*Border Colors---------*/
     --color-border-gray: var(--c-gray-100);
@@ -159,10 +162,26 @@
     /*Green Gradient Colors---------*/
     --color-gradient-green-1: var(--c-green-500);
     --color-gradient-green-2: var(--c-green-300);
+    --color-green-gradient: linear-gradient(
+      90deg,
+      var(--color-gradient-green-1),
+      var(--color-gradient-green-2),
+      var(--color-gradient-green-1),
+      var(--color-gradient-green-2),
+      var(--color-gradient-green-1)
+    );
 
     /*Yellow Gradient Colors---------*/
     --color-gradient-yellow-1: var(--c-yellow-400);
     --color-gradient-yellow-2: var(--c-yellow-700);
+    --color-yellow-gradient: linear-gradient(
+      90deg,
+      var(--color-gradient-yellow-2),
+      var(--color-gradient-yellow-1),
+      var(--color-gradient-yellow-2),
+      var(--color-gradient-yellow-1),
+      var(--color-gradient-yellow-2)
+    );
   }
 
   *,
@@ -201,6 +220,34 @@
     color: var(--color-text-nav-green);
   }
 
+  p {
+    font-size: calc(16 / 16 * 1rem);
+
+    &.small {
+      font-size: calc(12 / 16 * 1rem);
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        font-size: calc(16 / 16 * 1rem);
+      }
+    }
+
+    &.medium {
+      font-size: calc(14 / 16 * 1rem);
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        font-size: calc(18 / 16 * 1rem);
+      }
+    }
+
+    &.large {
+      font-size: calc(16 / 16 * 1rem);
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        font-size: calc(20 / 16 * 1rem);
+      }
+    }
+  }
+
   img,
   picture,
   svg {
@@ -216,6 +263,28 @@
 
     @media (width >=calc(1000 / 16 * 1rem)) {
       padding-block: 80px;
+    }
+  }
+
+  .heading {
+    text-transform: uppercase;
+    -webkit-text-fill-color: var(--color-text-light);
+
+    font-weight: 900;
+
+    &.style__italic {
+      font-style: italic;
+    }
+
+    &.color__yellow {
+      -webkit-text-fill-color: var(--color-text-heading-yellow);
+    }
+
+    &.stroke__gradient {
+      -webkit-text-stroke-color: transparent;
+      -webkit-text-stroke-width: 8px;
+      background-image: var(--color-green-gradient);
+      background-clip: text;
     }
   }
 }
@@ -306,5 +375,146 @@
   }
 
   .hero {
+    text-align: center;
+
+    .hero__wrapper {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      gap: 32px;
+    }
+
+    .hero__heading {
+    }
+
+    .hero__image {
+      width: calc(328 / 16 * 1rem);
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        width: calc(811 / 16 * 1rem);
+      }
+    }
+
+    .hero__title {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 4px;
+    }
+
+    .hero__subheading {
+    }
+
+    .hero__brands {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--color-bg-white);
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+
+    .hero__brand-image {
+      width: calc(64 / 16 * 1rem);
+    }
+
+    .hero__buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  .mechanics {
+    background-color: var(--color-bg-green);
+    text-align: center;
+
+    .mechanics__wrapper {
+      display: grid;
+    }
+
+    .mechanics__heading {
+      padding-block-end: 12px;
+    }
+
+    .mechanics__subheading {
+      width: fit-content;
+      margin-inline: auto;
+      padding: 8px 12px;
+      color: var(--color-text-heading-yellow-2);
+      background-image: var(--color-yellow-gradient);
+      transform: skew(-15deg);
+      margin-block-end: 48px;
+    }
+
+    .mechanics__cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .mechanics__card {
+      display: grid;
+      justify-items: center;
+      gap: 20px;
+      max-width: 170px;
+      background-color: var(--color-bg-white);
+      padding: 24px 12px;
+      border-radius: 12px;
+    }
+
+    .card__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--color-bg-green);
+      color: var(--color-text-light);
+      font-weight: 900;
+    }
+
+    .card__title {
+      text-transform: uppercase;
+    }
+
+    .card__description {
+    }
+
+    .card__image {
+      &.card__buy {
+        width: 133px;
+        height: auto;
+      }
+
+      &.card__scratch {
+        width: 116px;
+        height: auto;
+      }
+
+      &.card__scan {
+        width: 74px;
+        height: auto;
+      }
+
+      &.card__join {
+        width: 73px;
+        height: auto;
+      }
+
+      &.card__win {
+        width: 105px;
+        height: auto;
+      }
+    }
+
+    .card__footnote {
+      color: var(--color-text-error-red);
+      font-weight: 900;
+    }
   }
 }
