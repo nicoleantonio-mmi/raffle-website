@@ -122,6 +122,7 @@
     --color-bg-white: var(--c-white);
     --color-bg-green: var(--c-green-500);
     --color-bg-footer: var(--c-black);
+    --color-bg-yellow: var(--c-yellow-600);
 
     /*Text Colors---------*/
     --color-text-dark: var(--c-black);
@@ -138,6 +139,7 @@
     --color-border-gray: var(--c-gray-100);
     --color-border-green: var(--c-green-500);
     --color-border-white: var(--c-white);
+    --color-border-yellow: var(--c-yellow-600);
 
     /*Primary CTA Button Colors---------*/
     --color-button-primary-cta-bg: var(--color-bg-green);
@@ -148,6 +150,11 @@
     --color-button-secondary-cta-bg: var(--color-bg-white);
     --color-button-secondary-cta-text: var(--color-text-primary-green);
     --color-button-secondary-cta-border: var(--color-border-white);
+
+    /*Tertiary CTA Button Colors---------*/
+    --color-button-tertiary-cta-bg: var(--color-bg-yellow);
+    --color-button-tertiary-cta-text: var(--color-text-heading-yellow-2);
+    --color-button-tertiary-cta-border: var(--color-border-yellow);
 
     /*Primary Button Colors---------*/
     --color-button-primary-bg: var(--color-bg-green);
@@ -321,6 +328,14 @@
       background-color: var(--color-button-secondary-bg);
       color: var(--color-button-secondary-cta-text);
       border: var(--color-button-secondary-cta-border);
+      border-radius: 14px;
+      padding: 8px 16px;
+    }
+
+    &.cta-tertiary {
+      background-color: var(--color-button-tertiary-cta-bg);
+      color: var(--color-button-tertiary-cta-text);
+      border: var(--color-button-tertiary-cta-border);
       border-radius: 14px;
       padding: 8px 16px;
     }
@@ -595,6 +610,33 @@
         text-wrap: wrap;
         margin-block-start: 12px;
       }
+    }
+  }
+
+  .cta__overlap {
+    .cta__wrapper {
+      display: grid;
+      justify-items: center;
+      background-color: var(--color-bg-green);
+      padding-block: 24px 0;
+      padding-inline: 24px;
+      text-align: center;
+      gap: 24px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      max-width: calc(300 / 16 * 1rem);
+    }
+
+    .cta__content {
+      display: grid;
+      justify-items: center;
+      gap: 12px;
+    }
+
+    .cta__image {
+      width: calc(315 / 16 * 1rem);
     }
   }
 }
