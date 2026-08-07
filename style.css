@@ -572,20 +572,22 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
+        transition: transform 300ms ease-in-out;
       }
 
-      &:active::after {
-        content: "";
-        width: calc(24 / 16 * 1rem);
-        height: calc(24 / 16 * 1rem);
-        background-image: url("images/ic_arrow_up.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center center;
+      &.active:after {
+        transform: rotate(180deg);
       }
     }
 
     .accordion__collapse {
+      &.collapse {
+        display: none;
+      }
+
+      &.active {
+        display: block;
+      }
     }
 
     .accordion__content {
