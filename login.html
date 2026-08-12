@@ -37,16 +37,16 @@
     </header>
 
     <main>
-      <section class="entry">
+      <section class="entry background__image">
         <div class="wrapper entry__wrapper">
-          <h1 class="hero__title heading stroke__gradient">
+          <h1 class="entry__title heading stroke__gradient">
             Buy, Scan, And
             <span class="heading style__italic color__yellow stroke__gradient"
               >Win</span
             >
           </h1>
 
-          <div class="main__content">
+          <div class="entry__content">
             <div class="hero__brands">
               <img
                 class="hero__brand-image"
@@ -70,16 +70,14 @@
                 height="15"
               />
             </div>
-            <form action="" class="main__form">
-              <div class="form__header">
-                <h3 class="form__title">Login</h3>
-                <p class="form__description">
-                  Please enter your registered mobile number.
-                </p>
-              </div>
+            <form action="" class="entry__form">
+              <h3 class="form__title">Login</h3>
+              <p class="form__description">
+                Please enter your registered mobile number.
+              </p>
 
-              <div class="form__inputfield">
-                <label for="mobile__number" class="input__label"
+              <div class="form__input-field">
+                <label for="mobile__number" class="form__label"
                   >Mobile Number</label
                 >
                 <input
@@ -91,7 +89,9 @@
                 />
               </div>
 
-              <button class="form__button"></button>
+              <button class="form__button button primary" value="submit">
+                Send Code
+              </button>
               <div class="form__footer">
                 <p class="form__footer-text">Don't have an account?</p>
                 <a href="/" class="form__footer-link">Sign up here.</a>
