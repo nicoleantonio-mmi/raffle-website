@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Raffle Website</title>
+    <title>Sign Up | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -71,9 +71,14 @@
               />
             </div>
             <form action="" class="entry__form">
-              <h3 class="form__title">Login</h3>
+              <h3 class="form__title">Sign Up</h3>
               <p class="form__description">
-                Please enter your registered mobile number.
+                To submit your raffle entry, we will need you to go through 2
+                more steps.
+              </p>
+              <p class="form__description">
+                Please enter your mobile number and we'll send you a
+                verification code to confirm it's you.
               </p>
 
               <div class="form__input-field">
@@ -88,10 +93,15 @@
                   placeholder="Mobile Number"
                 />
               </div>
+              <div class="form__button-group">
+                <button class="form__button button primary" value="submit">
+                  Send Code
+                </button>
+                <button class="form__button button secondary" value="submit">
+                  Cancel
+                </button>
+              </div>
 
-              <button class="form__button button primary" value="submit">
-                Send Code
-              </button>
               <div class="form__footer">
                 <p class="form__footer-text">Don't have an account?</p>
                 <a href="/" class="form__footer-link">Sign up here</a>

@@ -395,7 +395,7 @@
 
     @media (width >= calc(1000 / 16 * 1rem)) {
       padding: 20px 64px;
-      gap: 48px;
+      gap: 24px;
     }
   }
 
@@ -906,9 +906,7 @@
     }
 
     .entry__title {
-      @media (width >= calc(1000 / 16 * 1rem)) {
-        text-align: center;
-      }
+      text-align: center;
     }
 
     .entry__content {
@@ -917,6 +915,10 @@
       align-items: center;
       gap: 32px;
       font-family: "Roboto";
+
+      @media (width >= calc(1000 / 16 * 1rem)) {
+        margin-inline-end: 40px;
+      }
     }
 
     .entry__form {
@@ -938,6 +940,8 @@
 
     .form__description {
       color: var(--color-text-helper-gray);
+      text-wrap: wrap;
+      max-width: 400px;
     }
 
     .form__input-field {
@@ -966,6 +970,12 @@
       }
     }
 
+    .form__button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
     .form__button {
     }
 
@@ -981,6 +991,7 @@
 
     .form__footer-link {
       text-decoration: underline;
+      font-weight: 500;
     }
   }
 }
