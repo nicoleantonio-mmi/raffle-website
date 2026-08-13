@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up | Raffle Website</title>
+    <title>Verify your number | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -70,43 +70,21 @@
                 height="15"
               />
             </div>
-            <form action="" class="entry__form" method="get">
-              <h3 class="form__title">Sign Up</h3>
+
+            <div class="entry__form page-result">
+              <img
+                src="/images/img_verification_success.svg"
+                alt=""
+                class="form__image"
+                width="119"
+                height="144"
+              />
+              <h3 class="form__title">Mobile number verified!</h3>
               <p class="form__description">
-                To submit your raffle entry, we will need you to go through 2
-                more steps. <br /><br />
-                Please enter your mobile number and we'll send you a
-                verification code to confirm it's you.
+                Your mobile number has been verified successfully. <br /><br />
+                Please wait as we redirect you to your profile setup.
               </p>
-
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >Mobile Number</label
-                >
-                <input
-                  type="text"
-                  name="mobile__number"
-                  id="mobile__number"
-                  class="form__input"
-                  placeholder="Mobile Number"
-                  inputmode="numeric"
-                  maxlength="11"
-                />
-              </div>
-              <div class="form__button-group">
-                <button class="form__button button primary" value="submit">
-                  Send Code
-                </button>
-                <button class="form__button button secondary" value="submit">
-                  Cancel
-                </button>
-              </div>
-
-              <div class="form__footer">
-                <p class="form__footer-text">Already have an account?</p>
-                <a href="/" class="form__footer-link">Login here</a>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>

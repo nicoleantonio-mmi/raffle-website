@@ -933,6 +933,12 @@
         width: 100%;
         gap: 40px;
       }
+
+      &.page-result {
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+      }
     }
 
     .form__title {
@@ -968,6 +974,17 @@
       &:focus-visible {
         outline: 2px var(--color-border-green) solid;
       }
+
+      &.otp-input {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+
+        @media (width >= calc(600 / 16 * 1rem)) {
+          width: 48px;
+          height: 48px;
+        }
+      }
     }
 
     .form__button-group {
@@ -992,6 +1009,20 @@
     .form__footer-link {
       text-decoration: underline;
       font-weight: 500;
+    }
+
+    .form__otp {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .form__image {
+      width: 66px;
+
+      @media (width >= calc(1000 / 16 * 1rem)) {
+        width: 119px;
+      }
     }
   }
 }

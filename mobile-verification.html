@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up | Raffle Website</title>
+    <title>Verify your number | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -71,40 +71,75 @@
               />
             </div>
             <form action="" class="entry__form" method="get">
-              <h3 class="form__title">Sign Up</h3>
+              <h3 class="form__title">Verify your number</h3>
               <p class="form__description">
-                To submit your raffle entry, we will need you to go through 2
-                more steps. <br /><br />
-                Please enter your mobile number and we'll send you a
-                verification code to confirm it's you.
+                Please enter the OTP code we sent to your mobile number. If you
+                don't see it in your inbox, please check your spam folder.
               </p>
 
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >Mobile Number</label
-                >
+              <div class="form__otp">
                 <input
                   type="text"
                   name="mobile__number"
                   id="mobile__number"
-                  class="form__input"
-                  placeholder="Mobile Number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
                   inputmode="numeric"
-                  maxlength="11"
+                  maxlength="1"
+                />
+                <input
+                  type="text"
+                  name="mobile__number"
+                  id="mobile__number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
+                  inputmode="numeric"
+                  maxlength="1"
+                />
+                <input
+                  type="text"
+                  name="mobile__number"
+                  id="mobile__number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
+                  inputmode="numeric"
+                  maxlength="1"
+                />
+                <input
+                  type="text"
+                  name="mobile__number"
+                  id="mobile__number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
+                  inputmode="numeric"
+                  maxlength="1"
+                />
+                <input
+                  type="text"
+                  name="mobile__number"
+                  id="mobile__number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
+                  inputmode="numeric"
+                  maxlength="1"
+                />
+                <input
+                  type="text"
+                  name="mobile__number"
+                  id="mobile__number"
+                  class="form__input otp-input"
+                  autocomplete="one-time-code"
+                  inputmode="numeric"
+                  maxlength="1"
                 />
               </div>
               <div class="form__button-group">
                 <button class="form__button button primary" value="submit">
-                  Send Code
+                  Verify my number
                 </button>
                 <button class="form__button button secondary" value="submit">
-                  Cancel
+                  Resend OTP
                 </button>
-              </div>
-
-              <div class="form__footer">
-                <p class="form__footer-text">Already have an account?</p>
-                <a href="/" class="form__footer-link">Login here</a>
               </div>
             </form>
           </div>
