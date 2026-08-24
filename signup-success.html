@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Raffle Website</title>
+    <title>Sign up complete | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -37,72 +37,67 @@
     </header>
 
     <main>
-      <section class="entry background__image">
-        <div class="wrapper entry__wrapper">
-          <h1 class="entry__title heading stroke__gradient">
-            Buy, Scan, And
-            <span class="heading style__italic color__yellow stroke__gradient"
-              >Win</span
-            >
-          </h1>
-
-          <div class="entry__content">
-            <div class="hero__brands">
-              <img
-                class="hero__brand-image"
-                src="/images/img_winston.png"
-                alt=""
-                width="88"
-                height="50"
-              />
-              <img
-                class="hero__brand-image"
-                src="/images/img_camel.png"
-                alt=""
-                width="99"
-                height="56"
-              />
-              <img
-                class="hero__brand-image"
-                src="/images/img_mighty.png"
-                alt=""
-                width="95"
-                height="15"
-              />
+      <section class="profile background__image">
+        <div class="wrapper profile__wrapper">
+          <div class="progress-stepper">
+            <div class="progress-stepper__item">
+              <div class="progress-stepper__number active">
+                <p class="small">1</p>
+              </div>
+              <div class="progress-stepper__title active">
+                <p class="small">Complete your Profile</p>
+              </div>
+              <div class="progress-stepper__track active"></div>
             </div>
-            <form action="" class="form" method="">
-              <h3 class="form__title">Login</h3>
-              <p class="form__description">
-                Please enter your registered mobile number.
-              </p>
-
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >Mobile Number</label
-                >
-                <input
-                  type="text"
-                  name="mobile__number"
-                  id="mobile__number"
-                  class="form__input"
-                  placeholder="Mobile Number"
-                  inputmode="numeric"
-                  maxlength="11"
-                />
+            <div class="progress-stepper__item">
+              <div class="progress-stepper__number active">
+                <p class="small">2</p>
               </div>
-
+              <div class="progress-stepper__title active">
+                <p class="small">Upload ID and Selfie</p>
+              </div>
+              <div class="progress-stepper__track active"></div>
+            </div>
+            <div class="progress-stepper__item">
+              <div class="progress-stepper__number inactive">
+                <p class="small">3</p>
+              </div>
+              <div class="progress-stepper__title inactive">
+                <p class="small">Submit Raffle Entry</p>
+              </div>
+              <div class="progress-stepper__track inactive"></div>
+            </div>
+            <div class="progress-stepper__item">
+              <div class="progress-stepper__number inactive">
+                <p class="small">4</p>
+              </div>
+              <div class="progress-stepper__title inactive">
+                <p class="small">Sign up Complete</p>
+              </div>
+              <div class="progress-stepper__track inactive"></div>
+            </div>
+          </div>
+          <div class="form page-result">
+            <img
+              src="/images/ic_success.png"
+              alt=""
+              class="form__image"
+              width="96"
+              height="96"
+            />
+            <h3 class="form__title">Mobile number verified!</h3>
+            <p class="form__description">
+              Your mobile number has been verified successfully. <br /><br />
+              Please wait as we redirect you to your profile setup.
+            </p>
+            <div class="form__button-group">
               <button class="form__button button primary" value="submit">
-                Send Code
+                Verify my number
               </button>
-              <div class="form__footer">
-                <p class="form__footer-text centered">
-                  Don't have an account yet?
-                  <a href="/signup.html" class="form__footer-link"
-                    >Sign up here.</a
-                  >
-                </p>
-              </div>
-            </form>
+              <button class="form__button button no-border" value="submit">
+                Resend OTP
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +128,7 @@
                 <a href="" class="footer__link">Sign Up</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">JTi Website</a>
+                <a href="" class="footer__link">JTI Website</a>
               </li>
             </ul>
           </div>
