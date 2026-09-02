@@ -353,7 +353,7 @@
     &.primary {
       background-color: var(--color-button-primary-bg);
       color: var(--color-button-primary-text);
-      border: 1px solid var(--color-button-primary-text);
+      border: 1px solid var(--color-button-primary-border);
     }
 
     &.secondary {
@@ -671,6 +671,72 @@
       font-weight: 600;
     }
     .fu__button {
+    }
+  }
+
+  .form__file-uploaders {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (width >= calc(600 / 16 * 1rem)) {
+      flex-direction: row;
+      gap: 24px;
+    }
+
+    .fu__uploaded-file {
+      width: 100%;
+    }
+
+    .fu__btn-change {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      padding-block: 16px;
+      position: relative;
+      margin-top: -56px;
+    }
+
+    .fu__btn-icon {
+      width: calc(24 / 16 * 1rem);
+    }
+  }
+
+  #agerequirement__dialog {
+    display: grid;
+    justify-content: center;
+    gap: 32px;
+    padding: 48px 24px;
+    text-align: center;
+    max-width: 700px;
+    border: none;
+    border-radius: 12px;
+
+    .dialog__title {
+    }
+
+    .dialog__description {
+    }
+
+    .dialog__span {
+      color: var(--color-text-primary-green);
+      font-weight: 700;
+    }
+
+    .dialog__btngroup {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 12px;
+
+      @media (width >= calc(600 / 16 * 1rem)) {
+        flex-direction: row;
+      }
+    }
+
+    .dialog__button {
     }
   }
 
@@ -1184,35 +1250,38 @@
         padding-block: 200px;
       }
     }
+  }
 
-    .form__file-uploaders {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+  .raffle-submission {
+    .rs__wrapper {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      padding-block: 120px;
 
       @media (width >= calc(600 / 16 * 1rem)) {
-        flex-direction: row;
-        gap: 24px;
+        padding-block: 200px;
+        gap: 64px;
       }
+    }
 
-      .fu__uploaded-file {
-        width: 100%;
-      }
+    h1 {
+      text-align: center;
+    }
 
-      .fu__btn-change {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-        padding-block: 16px;
-        position: relative;
-        top: -56px;
-      }
+    .form__description {
+      max-width: calc(700 / 16 * 1rem);
+    }
 
-      .fu__btn-icon {
-        width: calc(24 / 16 * 1rem);
-      }
+    .form__label-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    a {
+      color: var(--color-text-primary-green);
     }
   }
 }

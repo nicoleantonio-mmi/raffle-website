@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up complete | Raffle Website</title>
+    <title>Enter Scratch Code | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -37,68 +37,51 @@
     </header>
 
     <main>
-      <section class="profile background__image">
-        <div class="wrapper profile__wrapper">
-          <div class="progress-stepper">
-            <div class="progress-stepper__item">
-              <div class="progress-stepper__number active">
-                <p class="small">1</p>
-              </div>
-              <div class="progress-stepper__title active">
-                <p class="small">Complete your Profile</p>
-              </div>
-              <div class="progress-stepper__track active"></div>
-            </div>
-            <div class="progress-stepper__item">
-              <div class="progress-stepper__number active">
-                <p class="small">2</p>
-              </div>
-              <div class="progress-stepper__title active">
-                <p class="small">Upload ID and Selfie</p>
-              </div>
-              <div class="progress-stepper__track active"></div>
-            </div>
-            <div class="progress-stepper__item">
-              <div class="progress-stepper__number inactive">
-                <p class="small">3</p>
-              </div>
-              <div class="progress-stepper__title inactive">
-                <p class="small">Submit Raffle Entry</p>
-              </div>
-              <div class="progress-stepper__track inactive"></div>
-            </div>
-            <div class="progress-stepper__item">
-              <div class="progress-stepper__number inactive">
-                <p class="small">4</p>
-              </div>
-              <div class="progress-stepper__title inactive">
-                <p class="small">Sign up Complete</p>
-              </div>
-              <div class="progress-stepper__track inactive"></div>
-            </div>
-          </div>
-          <div class="form page-result">
-            <img
-              src="/images/ic_success.png"
-              alt=""
-              class="form__image"
-              width="96"
-              height="96"
-            />
-            <h3 class="form__title">Mobile number verified!</h3>
+      <section class="raffle-submission background__image">
+        <div class="wrapper rs__wrapper">
+          <h1 class="hero__title heading stroke__gradient">
+            Buy, Scan, And
+            <span class="heading style__italic color__yellow stroke__gradient"
+              >Win</span
+            >
+          </h1>
+
+          <form action="" class="form" method="">
+            <h3 class="form__title">Selfie with Products</h3>
             <p class="form__description">
-              Your mobile number has been verified successfully. <br /><br />
-              Please wait as we redirect you to your profile setup.
+              Please upload a selfie of you holding your purchased items.
             </p>
-            <div class="form__button-group">
-              <button class="form__button button primary" value="submit">
-                Verify my number
-              </button>
-              <button class="form__button button no-border" value="submit">
-                Resend OTP
-              </button>
+            <div class="form__file-uploaders">
+              <div class="fu__uploaded-file">
+                <div class="file-uploader">
+                  <img
+                    src="/images/img_uploader_ID.png"
+                    alt=""
+                    class="fu__image"
+                    width="500"
+                    height="500"
+                  />
+                  <label for="mobile__number" class="fu__label"
+                    >Government ID</label
+                  >
+                  <button class="fu__button button secondary">Browse</button>
+                </div>
+                <button class="fu__btn-change button overlay">
+                  <img
+                    src="/images/ic_fileuploader_photo.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                    class="fu__btn-icon"
+                  />
+                  <p class="small">Change Photo</p>
+                </button>
+              </div>
             </div>
-          </div>
+            <button class="form__button button primary" value="submit">
+              Send Code
+            </button>
+          </form>
         </div>
       </section>
     </main>
@@ -128,7 +111,7 @@
                 <a href="" class="footer__link">Sign Up</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">JTI Website</a>
+                <a href="" class="footer__link">JTi Website</a>
               </li>
             </ul>
           </div>

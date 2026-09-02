@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete your profile | Raffle Website</title>
+    <title>Sign up complete | Raffle Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/script.js" defer></script>
   </head>
@@ -50,13 +50,13 @@
               <div class="progress-stepper__track active"></div>
             </div>
             <div class="progress-stepper__item">
-              <div class="progress-stepper__number inactive">
+              <div class="progress-stepper__number active">
                 <p class="small">2</p>
               </div>
-              <div class="progress-stepper__title inactive">
+              <div class="progress-stepper__title active">
                 <p class="small">Upload ID and Selfie</p>
               </div>
-              <div class="progress-stepper__track inactive"></div>
+              <div class="progress-stepper__track active"></div>
             </div>
             <div class="progress-stepper__item">
               <div class="progress-stepper__number inactive">
@@ -77,91 +77,28 @@
               <div class="progress-stepper__track inactive"></div>
             </div>
           </div>
-          <form action="" class="form" method="">
-            <h3 class="form__title">Complete your Profile</h3>
+          <div class="form page-result">
+            <img
+              src="/images/ic_success.png"
+              alt=""
+              class="form__image"
+              width="96"
+              height="96"
+            />
+            <h3 class="form__title">Mobile number verified!</h3>
             <p class="form__description">
-              Fill in your details to participate in our raffle program and
-              claim your prize.
+              Your mobile number has been verified successfully. <br /><br />
+              Please wait as we redirect you to your profile setup.
             </p>
-            <div class="form__inputs">
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >First Name</label
-                >
-                <input
-                  type="text"
-                  name="first__name"
-                  id="first__name"
-                  class="form__input"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >Last Name</label
-                >
-                <input
-                  type="text"
-                  name="last__name"
-                  id="last__name"
-                  class="form__input"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label">Birthday</label>
-                <input
-                  type="text"
-                  name="birthday"
-                  id="birthday"
-                  class="form__input"
-                  placeholder="mm/dd/yyyy"
-                />
-              </div>
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label">Address</label>
-                <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  class="form__input"
-                  placeholder="Address"
-                />
-              </div>
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label">Province</label>
-                <input
-                  type="text"
-                  name="province"
-                  id="province"
-                  class="form__input"
-                  placeholder="Province"
-                />
-              </div>
-              <div class="form__input-field">
-                <label for="mobile__number" class="form__label"
-                  >City/Town</label
-                >
-                <input
-                  type="text"
-                  name="city"
-                  id="city"
-                  class="form__input"
-                  placeholder="City/Town"
-                />
-              </div>
+            <div class="form__button-group">
+              <button class="form__button button primary" value="submit">
+                Submit Raffle Entry
+              </button>
+              <button class="form__button button no-border" value="submit">
+                Back to Home
+              </button>
             </div>
-            <button class="form__button button primary" value="submit">
-              Complete my Profile
-            </button>
-            <div class="form__footer">
-              <p class="form__footer-text">
-                By clicking Complete my Profile, you agree to our
-                <a href="/" class="form__footer-link">Terms and Conditions</a>
-                and <a href="/" class="form__footer-link">Privacy Policy.</a>
-              </p>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
@@ -191,7 +128,7 @@
                 <a href="" class="footer__link">Sign Up</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">JTi Website</a>
+                <a href="" class="footer__link">JTI Website</a>
               </li>
             </ul>
           </div>
